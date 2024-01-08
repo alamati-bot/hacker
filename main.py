@@ -10,21 +10,22 @@ import csv
 # from decouple import config
 import ast
 import random
+import os
 
 
-BOT_TOKEN_base = "6571688882:AAF8xXbGaJi2quxm4Zpk0xKrp2AYLujAO_g"
+BOT_TOKEN_base = os.environ.get('BOT_TOKEN_base')
 bot_b= telebot.TeleBot(BOT_TOKEN_base)
-BOT_TOKEN_shela = "6434609181:AAFs9F8mcQEaPh6elpPlJBbLmDJUBHIsXPU"
+BOT_TOKEN_shela = os.environ.get('BOT_TOKEN_shela')
 bot_sh= telebot.TeleBot(BOT_TOKEN_shela)
-BOT_TOKEN_max = "6895920184:AAF7qgEouagr94QiIqK4VYxzzBN49NKGJQA"
+BOT_TOKEN_max = os.environ.get('BOT_TOKEN_max')
 bot_m= telebot.TeleBot(BOT_TOKEN_max)
-BOT_TOKEN_prime = "6617507325:AAHMOf0lAPTGU0-YvlHtOWIW_izTUlUNr3g"
+BOT_TOKEN_prime = os.environ.get('BOT_TOKEN_prime')
 bot_p= telebot.TeleBot(BOT_TOKEN_prime)
-BOT_TOKEN_contact = "6894311459:AAGbbE9Ko-WNFj7DTDe1XbpoByel3zcZPxo"
+BOT_TOKEN_contact = os.environ.get('BOT_TOKEN_contact')
 bot_c= telebot.TeleBot(BOT_TOKEN_contact)
-BOT_TOKEN_admin = "6744156648:AAG8hQxAab-rTdm0cfn2g3A7WuZCs5YUuBs"
+BOT_TOKEN_admin = os.environ.get('BOT_TOKEN_admin')
 bot_ad= telebot.TeleBot(BOT_TOKEN_admin)
-BOT_TOKEN_face = "6778175590:AAEDug0pSt-MPeotyXw4okhZhh4M6FVP0Po"
+BOT_TOKEN_face = os.environ.get('BOT_TOKEN_face')
 bot_face= telebot.TeleBot(BOT_TOKEN_face)
 
 user_state = {}
